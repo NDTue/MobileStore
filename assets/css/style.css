@@ -309,12 +309,12 @@ hr{
     display: flex;
     justify-content: center;
     padding: 52px 0;
-    background-image: url('./assets/img/product-banner.jpg');
-    background-image: url('/Assignment/assets/img/product-banner.jpg');
+    background-image: url('../img/product-banner.jpg');
+    /* background-image: url('/Assignment/assets/img/product-banner.jpg'); */
 
 }
 
-#product .product-section-title{
+#product .product-section-title {
     font-size: 3rem;
 }
 
