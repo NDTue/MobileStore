@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Thay href thành link ảnh sẽ hiển thị ảnh trên web -->
+    <link rel="icon" type="image/x-icon" href="/assignment1/assets/img/avatar.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-web/css/all.min.css">
+    <!-- <link rel="stylesheet" href="/assignment1/public/assets/img/"> -->
+    <title>MobileStore</title>
+</head>
+<body>
+    <!--1. Phân tích
+            1. Header
+            2. Content
+                1. Banner
+                2. Product
+                3. About
+        2. Dựng base(xây móng)
+        3. Xây dựng từng phần theo phân tích
+        4. Hoàn thiện -->
+        <div id="main">
+            <div id="header-container">
+                <!-- HEADER -->
+                <div class="header">
+                    <div class="header-left">
+                        <a href="tel:0987964526">
+                            <i class="fa-solid fa-phone-volume" style="margin-right: 3px;"></i>
+                            Hotline: 0987964526
+                        </a>
+                    </div>
+
+                    <div class="header-middle">
+                        <p style="opacity: .2;">Made by NDTue</p>
+                    </div>
+
+                    <a href="" class="header-right">
+                        <i class="fa-solid fa-user" style="margin-right: 8px;"></i>
+                        Login | Register
+                    </a>
+                </div>
+                <hr>
+
+                <!-- Nav-bar -->
+                <div class="nav-bar">
+                    <div class="left-nav">
+                        <h1>Mobile<span>Store</span></h1>
+                    </div>
+
+                    <div class="main-nav">
+                        <ul>
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#product">PRODUCT</a></li>
+                            <li><a href="#about">ABOUT US</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="right-nav">
+                        <input class="nav-search" type="text" name="" id="" placeholder="Searching">
+                        <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+                        
+                        <div class="nav-shopping">
+                            <!-- dropdown -->
+                            <a class="dropdown-toggle"><i class="fa-solid fa-cart-shopping"></i></a>
+                            <div class="dropdown-menu">
+                                <div class="dropdown-cart-total">
+                                    <span>TOTAL</span>
+                                    <span class="cart-price">$0</span>
+                                </div>
+                                <div class="dropdown-cart-action">
+                                    <a href="#product" style="color: white; text-decoration: none;">No product in cart please shopping</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!-- End Header -->
+            
+            <!-- BANNER -->
+            <div id="banner">
+                <!-- Banner Left -->
+                <div class="banner-left">
+                    <!-- <img src="/assignment1/assets/img/slider-1.jpg" alt=""> -->
+                    <img src="./assets/img/slider-1.jpg" alt="">
+                    
+                    <div class="left-content">
+                        <h1 class="left-title">AirPods<br>Earphones</h1>
+                        <div class="left-price">
+                            <sup>Today:</sup>
+                            <span>$249</span>
+                        </div>
+                        <a href="" class="left-btn">
+                            Click Here
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Banner Right -->
+                <div class="banner-right">
+                    <div class="right-item"> <!-- Headphone -->
+                        <div class="right-img">
+                            <!-- <img src="/assignment1/assets/img/banner-item-1.jpg" alt=""> -->
+                            <img src="./assets/img/banner-item-1.jpg" alt="">
+                            
+                            <div class="right-content">
+                                <h3 class="right-title">Edifier<br>Stero Bluetooth</h3>
+                                <a href="" class="right-link">
+                                    Shop Now
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-item"> <!-- GoPro -->
+                        <div class="right-img">
+                            <!-- <img src="/assignment1/assets/img/banner-item-2.jpg" alt=""> -->
+                            <img src="./assets/img/banner-item-2.jpg" alt="">
+                            
+                            <div class="right-content">
+                                <h3 class="right-title">
+                                    GoPro - Fusion 360
+                                    <span>Save $70</span>
+                                </h3>
+                                <a href="" class="right-link">
+                                    Shop Now
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-item"> <!-- Apple Watch -->
+                        <div class="right-img">
+                            <!-- <img src="/assignment1/assets/img/banner-item-3.jpg" alt=""> -->
+                            <img src="./assets/img/banner-item-3.jpg" alt="">
+                            
+                            <div class="right-content">
+                                <h3 class="right-title">
+                                    Apple Watch 4
+                                    <span>Our Hottest Deals</span>
+                                </h3>
+                                <a href="" class="right-link">
+                                    Shop Now
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  <!-- End Banner -->
+
+            <!-- PRODUCT -->
+            <div id="product">
+                <div class="product-banner">
+                    <div class="product-section-title">Product</div>
+                </div>
+                <div class="page-content">
+                    <div class="container">
+                        <div class="row">
+                            <aside class="left-col"> <!-- left col -->
+                                <div class="sidebar">
+                                    <div class="filter"> <!-- Filter -->
+                                        <label>Filters:</label>
+                                        <span>Clean All</span>
+                                    </div>
+                                    <div class="category"> <!-- Category -->
+                                        <h3 class="category-title">
+                                            <a>Category</a>
+                                            <i class="fa-solid fa-angle-down" style="margin-left: auto;"></i>
+                                        </h3>
+                                        <div class="category-show"> <!-- Category show -->
+                                            <div class="category-body" style="padding-top: 1rem; padding-bottom: 2rem;">
+                                                <!-- TV -->
+                                                <div class="filter-item"> <!-- filter item -->
+                                                    <div class="custom-checkbox">
+                                                        <input type="checkbox" name="" id="">
+                                                        <label class="checkbox-label" for="">TV</label>
+                                                    </div>
+                                                </div>
+                                                <!-- Computers -->
+                                                <div class="filter-item"> <!-- filter item -->
+                                                    <div class="custom-checkbox">
+                                                        <input type="checkbox" name="" id="">
+                                                        <label class="checkbox-label" for="">Computers</label>
+                                                    </div>
+                                                </div>
+                                                <!-- Tablets & Cellphones -->
+                                                <div class="filter-item"> <!-- filter item -->
+                                                    <div class="custom-checkbox">
+                                                        <input type="checkbox" name="" id="">
+                                                        <label class="checkbox-label" for="">Tablets & Cellphones</label>
+                                                    </div>
+                                                </div>
+                                                <!-- SmartWatches -->
+                                                <div class="filter-item"> <!-- filter item -->
+                                                    <div class="custom-checkbox">
+                                                        <input type="checkbox" name="" id="">
+                                                        <label class="checkbox-label" for="">Smartwatches</label>
+                                                    </div>
+                                                </div>
+                                                <!-- Mouse -->
+                                                <div class="filter-item"> <!-- filter item -->
+                                                    <div class="custom-checkbox">
+                                                        <input type="checkbox" name="" id="">
+                                                        <label class="checkbox-label" for="">Mouse</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </aside>
+                            <div class="right-col"> <!-- right col -->
+                                <div class="toolbox"> <!-- toolbox -->
+                                    <div class="toolbox-left"> <!-- toolbox-left -->
+                                        <div class="toolbox-info" style="color: #ccc;">
+                                            Showing
+                                            <span style="color: #1a1a1a;">9 of 9</span>
+                                            Products
+                                        </div>
+                                    </div>
+                                    <div class="toolbox-right"> <!-- toolbox-right -->
+                                        <div class="toolbox-sort">
+                                            <label for="">Sort by:</label>
+                                            <div class="select-custom">
+                                                <select class="form-control">
+                                                    <option value="popularity">Most Popular</option>
+                                                    <option value="pricelow">Price Low to High</option>
+                                                    <option value="pricehigh">Price High to Low</option>
+                                                    <option value="newest">Newest</option>
+                                                    <option value="rating">Most Rated</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="products"> <!-- products-->
+                                    <div class="product-layout">
+                                        
+                                        <div class="product-layout-item"> <!-- 1. Mouse 1 -->
+                                            <div class="product-item">
+                                                <div class="product-img">
+                                                    <span class="product-label">Sale</span>
+                                                    <!-- <img class="product-img" src="/assignment1/assets/img/mouse-1.jpg" alt=""> -->
+                                                    <img class="product-img" src="./assets/img/mouse-1.jpg" alt="">
+                                                    <div class="product-action">
+                                                        <i class="fa-solid fa-cart-plus"></i>
+                                                        <span>Add to cart</span>
+                                                    </div>
+                                                </div>
+                                                <div class="product-body">
+                                                    <h3 class="product-title">
+                                                        <a target="_blank" href="https://zadez.vn/zadez-m-382z-series/">
+                                                            Mouse Bluetooth Silent Zadez M382Z
+                                                        </a>
+                                                    </h3>
+                                                    <div class="product-price">$25</div>
+                                                    <div class="rating-container">
+                                                        <!-- <div class="rating">
+                                                            <div class="rating-val"></div>
+                                                        </div> -->
+                                                        <i class="fa-regular fa-star"></i>
+                                                        <i class="fa-regular fa-star"></i>
+                                                        <i class="fa-regular fa-star"></i>                                                                                                              
+                                                        <i class="fa-regular fa-star"></i>                                                                                                              
+                                                        <i class="fa-regular fa-star"></i>                                                                                                              
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-layout-item"> <!-- 2. Mouse 2 -->
+                                            <div class="product-item">
+                                                <div class="product-img">
+                                                    <span class="product-label">Sale</span>
+                                                    <!-- <img class="product-img" src="/assignment1/assets/img/mouse 2.jpg" alt=""> -->
+                                                    <img class="product-img" src="./assets/img/mouse 2.jpg" alt="">
+                                                    <div class="product-action">
+                                                        <i class="fa-solid fa-cart-plus"></i>
+                                                        <span>Add to cart</span>
+                                                    </div>
+                                                </div>
+                                                <div class="product-body">
+                                                    <h3 class="product-title">
+                                                        <a target="_blank" href="https://www.corsair.com/us/en/p/gaming-mouse/ch-9311011-na/harpoon-rgb-wireless-gaming-mouse-ch-9311011-na">
+                                                            Bluetooth Gaming Corsair Harpoon RGB
+                                                        </a>
+                                                    </h3>
+                                                    <div class="product-price">$90</div>
+                                                    <div class="rating-container">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-layout-item"> <!-- 3. Laptop 1 -->
+                                            <div class="product-item">
+                                                <div class="product-img">
+                                                    <span class="product-label">Sale</span>
+                                                    <!-- <img class="product-img" src="/assignment1/assets/img/laptop 1.jpg" alt=""> -->
+                                                    <img class="product-img" src="./assets/img/laptop 1.jpg" alt="">
+                                                    <div class="product-action">
+                                                        <i class="fa-solid fa-cart-plus"></i>
+                                                        <span>Add to cart</span>
+                                                    </div>
+                                                </div>
+                                                <div class="product-body">
+                                                    <h3 class="product-title">
+                                                        <a target="_blank" href="https://www.bing.com/ck/a?!&&p=412b3fd9bb30db73JmltdHM9MTcwMjUxMjAwMCZpZ3VpZD0yNzJiN2UzYS1hNmRmLTY0MWItMDBlMC02ZDFkYTdkZTY1MjYmaW5zaWQ9NTI0Nw&ptn=3&ver=2&hsh=3&fclid=272b7e3a-a6df-641b-00e0-6d1da7de6526&psq=MacBook+Air+M2+15-inch+2023+-+8GB%2f256GB&u=a1aHR0cHM6Ly93d3cuYXBwbGUuY29tL3ZuL21hY2Jvb2stYWlyLTEzLWFuZC0xNS1tMi8&ntb=1">
+                                                            MacBook Air M2 15-inch 2023 - 8GB/256GB
+                                                        </a>
+                                                    </h3>
+                                                    <div class="product-price">$1.400</div>
+                                                    <div class="rating-container">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-regular fa-star"></i>
+                                                        <i class="fa-regular fa-star"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-layout-item"> <!-- 4. Smartwatch -->
+                                            <div class="product-item">
+                                                <div class="product-img">
+                                                    <span class="product-label">Sale</span>
+                                                    <!-- <img class="product-img" src="/assignment1/assets/img/smartwatch.jpg" alt=""> -->
+                                                    <img class="product-img" src="./assets/img/smartwatch.jpg" alt="">
+                                                    <div class="product-action">
+                                                        <i class="fa-solid fa-cart-plus"></i>
+                                                        <span>Add to cart</span>
+                                                    </div>
+                                                </div>
+                                                <div class="product-body">
+                                                    <h3 class="product-title">
+                                                        <a target="_blank" href="https://consumer.huawei.com/en/wearables/band7/">
+                                                            Huawei Band 7 smart bracelet
+                                                        </a>
+                                                    </h3>
+                                                    <div class="product-price">$125</div>
+                                                    <div class="rating-container">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-regular fa-star"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-layout-item"> <!-- 5. Ipad -->
+                                            <div class="product-item">
+                                                <div class="product-img">
+                                                    <span class="product-label">Sale</span>
+                                                    <!-- <img class="product-img" src="/assignment1/assets/img/Ipad.jpg" alt=""> -->
+                                                    <img class="product-img" src="./assets/img/Ipad.jpg" alt="">
+                                                    <div class="product-action">
+                                                        <i class="fa-solid fa-cart-plus"></i>
+                                                        <span>Add to cart</span>
+                                                    </div>
+                                                </div>
+                                                <div class="product-body">
+                                                    <h3 class="product-title">
+                                                        <a target="_blank" href="https://fptshop.com.vn/may-tinh-bang/ipad-gen-10-2022-10-9-inch-wifi">
+                                                            iPad 10.9-inch 2022 - 64GB Wifi
+                                                        </a>
+                                                    </h3>
+                                                    <div class="product-price">$450</div>
+                                                    <div class="rating-container">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-layout-item"> <!-- 6. Laptop 2 -->
+                                            <div class="product-item">
+                                                <div class="product-img">
+                                                    <span class="product-label">Sale</span>
+                                                    <!-- <img class="product-img" src="/assignment1/assets/img/laptop 2.jpg" alt=""> -->
+                                                    <img class="product-img" src="./assets/img/laptop 2.jpg" alt="">
+                                                    <div class="product-action">
+                                                        <i class="fa-solid fa-cart-plus"></i>
+                                                        <span>Add to cart</span>
+                                                    </div>
+                                                </div>
+                                                <div class="product-body">
+                                                    <h3 class="product-title">
+                                                        <a target="_blank" href="https://www.apple.com/newsroom/2023/01/apple-unveils-macbook-pro-featuring-m2-pro-and-m2-max/">
+                                                            MacBook Pro M2 Pro 14 inch 2023
+                                                        </a>
+                                                    </h3>
+                                                    <div class="product-price">$2.250</div>
+                                                    <div class="rating-container">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-regular fa-star"></i>
+                                                        <i class="fa-regular fa-star"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-layout-item"> <!-- 7. Phone -->
+                                            <div class="product-item">
+                                                <div class="product-img">
+                                                    <span class="product-label">Sale</span>
+                                                    <!-- <img class="product-img" src="/assignment1/assets/img/Phone.jpg" alt=""> -->
+                                                    <img class="product-img" src="./assets/img/Phone.jpg" alt="">
+                                                    <div class="product-action">
+                                                        <i class="fa-solid fa-cart-plus"></i>
+                                                        <span>Add to cart</span>
+                                                    </div>
+                                                </div>
+                                                <div class="product-body">
+                                                    <h3 class="product-title">
+                                                        <a target="_blank" href="https://www.samsung.com/vn/smartphones/galaxy-s22/">
+                                                            Samsung Galaxy S22 Plus 5G 128GB
+                                                        </a>
+                                                    </h3>
+                                                    <div class="product-price">$750</div>
+                                                    <div class="rating-container">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-regular fa-star"></i>
+                                                        <i class="fa-regular fa-star"></i>
+                                                        <i class="fa-regular fa-star"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-layout-item"> <!-- 8. TV 1 -->
+                                            <div class="product-item">
+                                                <div class="product-img">
+                                                    <span class="product-label">Sale</span>
+                                                    <!-- <img class="product-img" src="/assignment1/assets/img/TV 1.jpg" alt=""> -->
+                                                    <img class="product-img" src="./assets/img/TV 1.jpg" alt="">
+                                                    <div class="product-action">
+                                                        <i class="fa-solid fa-cart-plus"></i>
+                                                        <span>Add to cart</span>
+                                                    </div>
+                                                </div>
+                                                <div class="product-body">
+                                                    <h3 class="product-title">
+                                                        <a target="_blank" href="https://www.samsung.com/vn/tvs/uhd-4k-tv/bu8000-65-inch-crystal-uhd-4k-smart-tv-ua65bu8000kxxv/">
+                                                            Smart Tivi Samsung Crystal UHD 4K 65 inch
+                                                        </a>
+                                                    </h3>
+                                                    <div class="product-price">$670</div>
+                                                    <div class="rating-container">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-layout-item"> <!-- 9. TV 2 -->
+                                            <div class="product-item">
+                                                <div class="product-img">
+                                                    <span class="product-label">Sale</span>
+                                                    <!-- <img class="product-img" src="/assignment1/assets/img/TV 2.jpg" alt=""> -->
+                                                    <img class="product-img" src="./assets/img/TV 2.jpg" alt="">
+                                                    <div class="product-action">
+                                                        <i class="fa-solid fa-cart-plus"></i>
+                                                        <span>Add to cart</span>
+                                                    </div>
+                                                </div>
+                                                <div class="product-body">
+                                                    <h3 class="product-title">
+                                                        <a target="_blank" href="https://www.mi.com/vn/product/mi-tv-p1-55/">
+                                                            Android Tivi Xiaomi P1 55 inch
+                                                        </a>
+                                                    </h3>
+                                                    <div class="product-price">$480</div>
+                                                    <div class="rating-container">
+                                                        <i class="fa-regular fa-star"></i>
+                                                        <i class="fa-regular fa-star"></i>
+                                                        <i class="fa-regular fa-star"></i>
+                                                        <i class="fa-regular fa-star"></i>
+                                                        <i class="fa-regular fa-star"></i>
+                                                        <i class="fa-regular fa-star"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div> <!-- End right-col -->
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End Product -->
+
+            <!-- ABOUT -->
+            <div id="about">
+                <div class="about-banner" style="background-image: url(./assets/img/about-section.jpg);"> <!-- About Banner -->
+                    <h1 class="about-title">
+                        About us
+                        <span>We are a group of 2 people</span>
+                    </h1>
+                </div>
+                <div class="about-content"> <!-- About Content -->
+                    <div class="members-info">
+                        <div class="member">
+                            <div class="member-name">
+                                <h2 class="member-name-title">
+                                    Nguyễn Đức Tuệ
+                                </h2>
+                                <p>Hi, I'm in the third year of my bachelor's degree. I'm currently studying IT majoring in software technology at HUSC, in the near future I wanna become the president of the United States</p>
+                            </div>
+                        </div>
+                        <div class="member">
+                            <div class="member-name">
+                                <h2 class="member-name-title">
+                                    Lê Trọng Tùng Lâm
+                                </h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At explicabo, rem numquam aspernatur, ex eius sit magnam debitis hic quo, quis mollitia? Quis, nisi et eligendi officia quos consequuntur quod?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- End main -->
+        
+</body>
+</html>
