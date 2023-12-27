@@ -650,7 +650,7 @@ i.fa-star{
 }
 /* About content */
 #about .about-content{
-    padding-bottom: 6rem;
+    padding-bottom: 4rem;
 }
 
 #about .members-info{
@@ -682,4 +682,124 @@ i.fa-star{
     margin-bottom: 1.3rem;
 }
 
+/* Login/Register Form */
+/* .login-form{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+} */
 
+.modal-content{
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+}
+
+.modal-content .modal-body{
+    position: relative;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1rem;
+}
+
+.modal-content .form-box{
+    position: relative;
+    max-width: 575px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    padding: 2.2rem 2rem 4.4rem;
+    box-shadow: 0 3px 16px rgba(51, 51, 51, 0.1);
+
+}
+.form-box .x-mark{
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    font-size: 24px;
+    padding: 4px;
+    cursor: pointer;
+}
+.x-mark:hover{
+    color: var(--btn-color);
+}
+
+.form-box ul{
+    color: #1a1a1a;
+    border-bottom: 0.1rem solid #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 16px 0;
+    font-size: 24px;
+    text-align: center;
+}
+
+.modal-content .nav-item{
+    flex: 1 1 0;
+    list-style: none;
+}
+.nav-item a{
+    /* color: var(--btn-color); */
+    color: #1a1a1a;
+    text-decoration: none;
+}
+.nav-item a:hover{
+    color: var(--btn-color);
+}
+
+.modal-content .tab-content{
+    padding-top: 2rem;
+}
+
+.modal-content .form-group{
+
+}
+.form-group label{
+    display: block;
+    color: #666;
+    font-size: 1.1rem;
+    margin: 0 0 0.4rem;
+}
+.form-group input{
+    height: 40px;
+    width: 100%;
+    padding: 0.85rem 1.2rem;
+    font-size: 1.2rem;
+    color: #777;
+    background-color: #fafafa;
+    border: 1px solid #ebebeb;
+    margin-bottom: 2rem;
+    transition: all 0.3s;
+}
+
+.modal-content .form-footer{
+    padding-top: 0.6rem;
+    padding-bottom: 3rem;
+    border-bottom: 0.1rem solid #ebebeb;
+    margin-bottom: 2.3rem;
+}
+.form-footer button{
+    width: 100%;
+    min-width: 115px;
+    padding: 12px;
+    background-color: white;
+    border: 1px solid var(--btn-color);
+    color: var(--btn-color);
+}
+.form-footer button:hover{
+    cursor: pointer;
+    background-color: var(--btn-color);
+    color: white;
+}
