@@ -16,7 +16,6 @@ btnLogin.addEventListener("click", (e) => {
     ) {
       alert("Đăng Nhập Thành Công");
       window.location.href = "/Assignment/index.html";
-      // Đổi thành tên người sử dụng
     } else {
       alert("Đăng Nhập Thất Bại");
     }

@@ -8,6 +8,7 @@ html {
     scroll-behavior: smooth;
     /*Khi bấm vào thanh navbar thì sẽ có hiệu ứng trượt mượt*/
     font-family: Arial, Helvetica, sans-serif;
+    /* font-family: "Roboto", sans-serif; */
     height: 100%;
     width: 100%;
 }
@@ -39,6 +40,9 @@ hr {
 .header-left a {
     text-decoration: none;
     color: var(--border-color);
+    position: absolute;
+    left: 1rem;
+    top: 0.8rem;
 }
 
 .header-left a:hover {
@@ -702,7 +706,7 @@ i.fa-star {
 
 .member-name p {
     font-size: 1rem;
-    font-family: "Poppins";
+    font-family: "Roboto";
     letter-spacing: 1px;
     color: var(--border-color);
     line-height: 1.5rem;
@@ -716,7 +720,7 @@ i.fa-star {
 
 /* ENDOW SECTION */
 .endow-container {
-    width: 1188px;
+    /* width: 1188px; */ 
     max-width: 100%;
     padding-left: 10px;
     padding-right: 10px;
